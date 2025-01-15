@@ -1,0 +1,12 @@
+<h2>New Input Component</h2>
+<p>new-input works!</p>
+<input
+  type="text"
+  id="input"
+  [(ngModel)]="value"
+  (ngModelChange)="onValueChange()"
+/>
+<p>Val: {{ value }}</p>
+
+<button (click)="decrease()">Decrease</button>
+<button (click)="increase()">Increase</button>
