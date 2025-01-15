@@ -1,0 +1,5 @@
+<div>
+  <p>{{voter}}</p>
+  <button [disabled]="isVoted" (click)="setIsVoting(true)">VOTE</button>
+  <button [disabled]="isVoted" (click)="setIsVoting(false)">NOT VOTE</button>
+</div>

@@ -1,0 +1,9 @@
+<div>
+  <h1>This is dynamic component, will show component</h1>
+  <ng-container
+    [ngComponentOutlet]="currentAd.component"
+    [ngComponentOutletInputs]="currentAd.inputs"
+  ></ng-container>
+
+  <button (click)="displayNextAd()">Next..</button>
+</div>

@@ -1,0 +1,19 @@
+<div id="parent">
+  <p>lifecycle works!</p>
+  <button>This is clickable button</button>
+
+  <div>
+    <h1>Versioning App</h1>
+    <p>Version : </p>
+    <span>Minor: {{minor}}</span>
+    <span>Major: {{major}}</span>
+  </div>
+  <div>
+    <h1>Voters App</h1>
+    <p>Total voted: {{totalVoted}}</p>
+    <p>Total not voted: {{totalNotVote}}</p>
+    @for (voter of voters; track $index) {
+    <app-voter [voter]="voter" (voting)="handleVote($event)"></app-voter>
+    }
+  </div>
+</div>
