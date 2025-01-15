@@ -1,0 +1,9 @@
+<div>
+  <h2>Template referance</h2>
+  <input #name type="text" id="name" />
+  <input #class type="text" id="class" />
+  <input #year type="number" id="year" />
+  <button (click)="handleSubmitForm(name.value, class.value, year.value)">
+    Submit Form
+  </button>
+</div>
