@@ -1,0 +1,14 @@
+<h1>Search your pokemon</h1>
+<input
+  type="text"
+  placeholder="Your pokemon name ..."
+  [(ngModel)]="inputString"
+  (ngModelChange)="searchPokemon($event)"
+/>
+
+<div *ngIf="pokemon$ | async as pokemon">
+  <p>{{ pokemon.name }}</p>
+  <p>{{ pokemon.base_experience }}</p>
+</div>
+
+<h1 *ngIf="loading">Loading ...</h1>
