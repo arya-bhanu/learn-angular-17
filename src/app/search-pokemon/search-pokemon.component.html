@@ -12,3 +12,21 @@
 </div>
 
 <h1 *ngIf="loading">Loading ...</h1>
+
+<div>
+  <h1>Search Pokemon with Reactive Form</h1>
+  <input
+    type="text"
+    placeholder="Your pokemon name with reactive form ..."
+    id="q"
+    name="q"
+    [formControl]="q"
+  />
+  <div *ngIf="pokemonQObs$ | async as pokemonObs; else loading">
+    <p>{{ pokemonObs.name }}</p>
+    <p>{{ pokemonObs.base_experience }}</p>
+  </div>
+  <ng-template #loading>
+    <h1>Loading</h1>
+  </ng-template>
+</div>
