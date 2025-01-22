@@ -1,0 +1,12 @@
+.container-img {
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container-img img {
+  object-fit: cover;
+}

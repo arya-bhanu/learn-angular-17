@@ -1,0 +1,56 @@
+<div class="container-img hero">
+  <img
+    ngSrc="photo-1736297150541-89378f055b96?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    priority="true"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+  />
+</div>
+<a routerLink="image">Go to image page</a>
+<h1>Hello World</h1>
+<h2>Gambar 1</h2>
+<div class="container-img" style="width: 500px; height: 500px">
+  <img
+    ngSrc="photo-1735748917573-78c3387fc8ec?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    loading="lazy"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+  />
+</div>
+
+<h2>Gambar 2</h2>
+<div class="container-img" style="width: 500px; height: 500px">
+  <img
+    ngSrc="photo-1737069222401-afd3720775ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    loading="lazy"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+  />
+</div>
+<h2>Gambar 3</h2>
+@defer(on viewport){
+<div class="container-img" style="width: 500px; height: 500px">
+  <img
+    ngSrc="photo-1736604970225-2633e0739d17?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    loading="lazy"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+  />
+</div>
+} @placeholder {
+    <p>Loading image 3 ...</p>
+ }
+
+<h2>Gambar 4</h2>
+@defer (on viewport) {
+<div class="container-img" style="width: 500px; height: 500px">
+  <img
+    ngSrc="photo-1735864248303-7c9f1f89e224?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    loading="lazy"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+  />
+</div>
+} @placeholder {
+<p>Loading image 4 ...</p>
+}
