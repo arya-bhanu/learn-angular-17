@@ -1,2 +1,15 @@
-<main class="main"></main>
+<main class="main">
+  <h1>Hello World</h1>
+  <form action="" [formGroup]="inputForm">
+    <input
+      type="text"
+      id="input"
+      placeholder="input here"
+      formControlName="input"
+    />
+  </form>
+  <button (click)="clickSubs()">Submit</button>
+  <h1>Pipe Value</h1>
+  <p>{{ valPipe | async }}</p>
+</main>
 <router-outlet />
